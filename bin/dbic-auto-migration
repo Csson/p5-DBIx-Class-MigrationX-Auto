@@ -1,0 +1,11 @@
+#!perl
+
+use 5.10.0;
+use strict;
+use warnings;
+
+use App::Spec;
+use Dir::Self;
+use DBIx::Class::Migrator;
+
+DBIx::Class::Migrator->new({ spec => App::Spec->read(__DIR__ . '/../share/dbic-auto-migrator.yaml') })->run;

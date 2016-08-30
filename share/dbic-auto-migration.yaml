@@ -1,0 +1,20 @@
+---
+name: dbic-auto-migrator
+appspec: { "version" : 0.0001 }
+class: DBIx::Class::MigrationX::Auto
+title: DBIx::Class::MigrationX::Auto
+
+subcommands:
+  prepare:
+    summary: Prepare migration
+    op: prepare
+    options:
+     - name: force_overwrite
+       description: Yes, really
+       type: flag
+  status:
+    summary: Migration status
+    op: summary
+  install:
+    summary: Install migration
+    op: install
