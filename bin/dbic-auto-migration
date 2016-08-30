@@ -4,6 +4,11 @@ use 5.10.0;
 use strict;
 use warnings;
 
+# ABSTRACT: Run it
+# AUTHORITY
+# PODNAME: dbic-auto-migration
+our $VERSION = 0.0001;
+
 use App::Spec;
 use Dir::Self;
 use DBIx::Class::Migrator;
