@@ -10,7 +10,10 @@ use warnings;
 our $VERSION = 0.0001;
 
 use App::Spec;
-use Dir::Self;
-use DBIx::Class::Migrator;
+use File::ShareDir::Tarball qw/dist_dir/;
+use Path::Tiny;
+use DBIx::Class::MigrationX::Auto;
 
-DBIx::Class::Migrator->new({ spec => App::Spec->read(__DIR__ . '/../share/dbic-auto-migrator.yaml') })->run;
+DBIx::Class::MigrationX::Auto->new({
+    spec => App::Spec->read(path(dist_dir('DBIx-Class-MigrationX-Auto'), 'dbic-auto-migration.yaml')->stringify),
+})->run;

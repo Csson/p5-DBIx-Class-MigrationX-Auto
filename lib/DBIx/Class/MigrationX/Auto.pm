@@ -17,7 +17,7 @@ use Try::Tiny;
 use Carp qw/confess/;
 use DBIx::Class::Migration;
 use experimental qw/signatures postderef/;
-    use Data::Printer;
+use lib 'lib';
 
 has config_class => (
     is => 'ro',
@@ -58,7 +58,14 @@ has migration => (
     is => 'ro',
     lazy => 1,
     builder => '_build_migrator',
-    handles => [qw/prepare install status/],
+    handles => [qw/
+        prepare
+        install
+        upgrade
+        status
+        drop_tables
+        dump_all_sets
+    /],
 );
 sub _build_migrator($self) {
     return DBIx::Class::Migration->new({
@@ -66,6 +73,12 @@ sub _build_migrator($self) {
         dbic_dh_args => $self->options,
     });
 }
+before status => sub ($self) {
+    say ref $self->schema;
+};
+before prepare => sub ($self) {
+    $self->status;
+};
 
 1;
 

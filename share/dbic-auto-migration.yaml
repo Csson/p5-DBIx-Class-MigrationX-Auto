@@ -14,7 +14,16 @@ subcommands:
        type: flag
   status:
     summary: Migration status
-    op: summary
+    op: status
   install:
     summary: Install migration
     op: install
+  upgrade:
+    summary: Upgrade schema
+    op: upgrade
+  dump_all_sets:
+    summary: Fixturize
+    op: dump_all_sets
+  drop_tables:
+    summary: Drop all tables!
+    op: drop_tables
