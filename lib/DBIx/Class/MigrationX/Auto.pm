@@ -65,6 +65,7 @@ has migration => (
         status
         drop_tables
         dump_all_sets
+        populate
     /],
 );
 sub _build_migrator($self) {

@@ -27,3 +27,6 @@ subcommands:
   drop_tables:
     summary: Drop all tables!
     op: drop_tables
+  populate:
+    summary: Populate from fixtures
+    op: populate
