@@ -1,4 +1,4 @@
-# This file was auto-generated from iller.yaml by Dist::Iller on 2016-08-30 07:30:17 UTC.
+# This file was auto-generated from iller.yaml by Dist::Iller on 2016-10-01 13:33:54 UTC.
 
 on runtime => sub {
     requires 'perl' => '5.010000';
@@ -27,7 +27,7 @@ on develop => sub {
     requires 'Dist::Zilla' => '5.000';
     requires 'Dist::Zilla::Plugin::Authority' => '1.009';
     requires 'Dist::Zilla::Plugin::BumpVersionAfterRelease::Transitional' => '0.007';
-    requires 'Dist::Zilla::Plugin::ChangeStats::Dependencies::Git' => '0.0100';
+    requires 'Dist::Zilla::Plugin::ChangeStats::Dependencies::Git' => '0.0200';
     requires 'Dist::Zilla::Plugin::CheckChangesHasContent' => '0.008';
     requires 'Dist::Zilla::Plugin::Clean' => '0.07';
     requires 'Dist::Zilla::Plugin::ConfirmRelease' => '0';
@@ -62,7 +62,7 @@ on develop => sub {
     requires 'Dist::Zilla::Plugin::ReadmeAnyFromPod' => '0.150250';
     requires 'Dist::Zilla::Plugin::RewriteVersion::Transitional' => '0.007';
     requires 'Dist::Zilla::Plugin::RunExtraTests' => '0.028';
-    requires 'Dist::Zilla::Plugin::ShareDir' => '0';
+    requires 'Dist::Zilla::Plugin::ShareDir::Tarball' => '0';
     requires 'Dist::Zilla::Plugin::Test::Compile' => '2.054';
     requires 'Dist::Zilla::Plugin::Test::EOF' => '0.0501';
     requires 'Dist::Zilla::Plugin::Test::EOL' => '0.18';

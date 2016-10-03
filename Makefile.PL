@@ -19,13 +19,13 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => 0,
     "File::ShareDir::Install" => "0.06"
   },
-  "DISTNAME" => "DBIx-Class-Migrator",
+  "DISTNAME" => "DBIx-Class-MigrationX-Auto",
   "EXE_FILES" => [
     "bin/dbic-auto-migration"
   ],
   "LICENSE" => "perl",
   "MIN_PERL_VERSION" => "5.010000",
-  "NAME" => "DBIx::Class::Migrator",
+  "NAME" => "DBIx::Class::MigrationX::Auto",
   "PREREQ_PM" => {},
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,

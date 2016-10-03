@@ -4,16 +4,16 @@ DBIx::Class::MigrationX::Auto - Short intro
 
 <div>
     <p>
-    <img src="https://img.shields.io/badge/perl-unknown-blue.svg" alt="Requires Perl unknown" />
-    <a href="https://travis-ci.org//"><img src="https://api.travis-ci.org//.svg?branch=master" alt="Travis status" /></a>
-    <a href="http://cpants.cpanauthors.org/release/CSSON/DBIx-Class-Migrator-0.0100"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/DBIx-Class-Migrator/0.0100" alt="Distribution kwalitee" /></a>
-    <a href="http://matrix.cpantesters.org/?dist=DBIx-Class-Migrator%200.0100"><img src="http://badgedepot.code301.com/badge/cpantesters/DBIx-Class-Migrator/0.0100" alt="CPAN Testers result" /></a>
+    <img src="https://img.shields.io/badge/perl-5.10+-blue.svg" alt="Requires Perl 5.10+" />
+    <a href="https://travis-ci.org/Csson/p5-DBIx-Class-MigrationX-Auto"><img src="https://api.travis-ci.org/Csson/p5-DBIx-Class-MigrationX-Auto.svg?branch=master" alt="Travis status" /></a>
+    <a href="http://cpants.cpanauthors.org/release/CSSON/DBIx-Class-MigrationX-Auto-0.0100"><img src="http://badgedepot.code301.com/badge/kwalitee/CSSON/DBIx-Class-MigrationX-Auto/0.0100" alt="Distribution kwalitee" /></a>
+    <a href="http://matrix.cpantesters.org/?dist=DBIx-Class-MigrationX-Auto%200.0100"><img src="http://badgedepot.code301.com/badge/cpantesters/DBIx-Class-MigrationX-Auto/0.0100" alt="CPAN Testers result" /></a>
     </p>
 </div>
 
 # VERSION
 
-Version 0.0100, released 2016-08-30.
+Version 0.0100, released 2016-10-03.
 
 # SYNOPSIS
 
@@ -31,7 +31,7 @@ DBIx::Class::Migrator is ...
 
 # HOMEPAGE
 
-[https://metacpan.org/release/DBIx-Class-Migrator](https://metacpan.org/release/DBIx-Class-Migrator)
+[https://metacpan.org/release/DBIx-Class-MigrationX-Auto](https://metacpan.org/release/DBIx-Class-MigrationX-Auto)
 
 # AUTHOR
 
